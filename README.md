@@ -30,6 +30,22 @@ the positive edge of the clock and the FIFO will reset when rstn goes low.
 * There will always be a gap of at least 1 idle clock cycle between a read and the following 
 request.
 
+## Testbanch Components
+
+### Transaction Definition
+The file `item.sv` contains the item class, which represents a FIFO transaction. Each transaction includes the following fields:
+* wr_req
+* rd_req
+* wr_data
+* rd_data
+* full
+* empty
+* Randomizable delay
+
+In addition, constraints are applied to ensure that all transactions are valid and align with the design assumptions.
+
+### 
+
  
 
 
